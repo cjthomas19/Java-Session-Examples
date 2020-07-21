@@ -1,3 +1,5 @@
+package Day1;
+
 public class P1_Hello_World {
 
     //This is our first program!

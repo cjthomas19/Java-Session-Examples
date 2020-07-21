@@ -1,3 +1,5 @@
+package Day1;
+
 public class Ex1_Variable_Types {
 
     public static void main(String[] args) {
