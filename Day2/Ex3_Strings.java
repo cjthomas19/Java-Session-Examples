@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-public class P3_Strings {
+public class Ex3_Strings {
     
     public static void main(String[] args) {
 

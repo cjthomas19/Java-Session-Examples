@@ -3,39 +3,41 @@ package Day2;
 import java.util.Scanner;
 
 public class P2_Numbers {
-    
+
     public static void main(String[] args) {
 
-        //Initialize Scanner utility
-        Scanner inStream = new Scanner(System.in);
+        //Initialize our scanner to handle user input
+        Scanner scan = new Scanner(System.in);
 
-        //Prompt the user and save each value for two different integers
-        System.out.print("Enter integer a: ");
-        int a = inStream.nextInt();
+        //Prompt the user to input a number
+        System.out.print("Enter an integer: ");
+
+        //Save the user's input as a integer
+        int a = scan.nextInt();
+
+        //Print the user's input back out at them
+        System.out.println("You entered: " + a);
+        System.out.println();
+
+        //Prompt the user for another number
+        System.out.print("Enter another integer: ");
+
+        //Save the user's second input as an integer
+        int b = scan.nextInt();
+
+        //Print the user's input back
+        System.out.println("You entered: " + b);
+        System.out.println();
         
-        System.out.print("Enter integer b: ");
-        int b = inStream.nextInt();
+        //Multiply a and b
+        int product = a * b;
 
-        System.out.println();
+        System.out.println("the product of your numbers is: " + product);
 
-        //We can also declare variables without assigning a value
-        int c;
-
-        //Try changing the '*' (times) to another operator (+, -, or /) and see what happens:
-        System.out.println(a + " times " + b + " equals " + (a * b));
-        System.out.println();
-
-        //Test if they are the same number
-        System.out.println("Are these numbers the same? " + (a==b));
-        System.out.println();
-
-        //Here, we declare and assign the value of c based on the values of a and b
-        c = a + b;
-
-        //Now, the value of c is equal to the value of a + b
-        System.out.println("c is a+b, which equals " + c);
-
-        //Close the input stream to prevent resource leaks
-        inStream.close();
+        //Check for equality
+        System.out.println("Are your numbers the same? " + (a==b));
+        
+        scan.close();
     }
+
 }

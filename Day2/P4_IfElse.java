@@ -5,42 +5,42 @@ import java.util.Scanner;
 public class P4_IfElse {
 
     public static void main(String[] args) {
+        //Initialize our scanner
 
-        //Initialize our input stream scanner
-        Scanner inStream = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-        //Prompt the user for a number
-        System.out.println("Enter a number: ");
+        //Accept input from the user
+        System.out.print("Enter integer a: ");
+        int a = scan.nextInt();
 
-        //Save that number
-        int a = inStream.nextInt();
+        System.out.print("Enter integer b: ");
+        int b = scan.nextInt();
 
-        //Prompt the user for another number
-        System.out.println("Enter another number: ");
+        System.out.println();
 
-        //Save that number, too
-        int b = inStream.nextInt();
+        //Ask the user what operation they want to do
 
-        //Prompt the user for an operation
-        System.out.println("Please enter ADD or SUBTRACT");
+        System.out.print("Enter ADD, SUBTRACT, MULTIPLY, or DIVIDE: ");
 
-        //Save their command
-        String operation = inStream.next();
+        String operation = scan.next();
 
-        //Use an if statement to print out results based on that command
+        System.out.print("Your result is: ");
+
+        //Use if statements to decide how to proceed
+
         if(operation.equalsIgnoreCase("ADD")) {
-
-            System.out.println(a + " + " + b + " = " + (a+b));
-
+            System.out.println(a + b);
         } else if(operation.equalsIgnoreCase("SUBTRACT")) {
-            
-            System.out.println(a + " - " + b + " = " + (a-b));
-
+            System.out.println(a - b);
+        } else if(operation.equalsIgnoreCase("MULTIPLY")) {
+            System.out.println(a * b);
+        } else if(operation.equalsIgnoreCase("DIVIDE")) {
+            System.out.println(a / b);
         } else {
-            System.out.println("Invalid operation");
+            System.out.println("Not a valid operation.");
         }
 
-        inStream.close();
+        scan.close();
     }
-
+    
 }

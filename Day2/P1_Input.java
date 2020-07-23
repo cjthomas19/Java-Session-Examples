@@ -4,23 +4,43 @@ import java.util.Scanner;
 
 public class P1_Input {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
-        //Initialize a variable, 'scan', as our scanner object
-        Scanner inputStream = new Scanner(System.in);
+        //Initalize our scanner object
+        Scanner scan = new Scanner(System.in);
 
-        //Prompt the user for input
-        System.out.print("Write something: ");
+        //Prompt the user to enter some text
+        System.out.print("Enter a word: ");
 
-        //Store the value of the scanner's input line as a string
-        String inString = inputStream.nextLine();
+        //Store input in a variable
+        String str = scan.nextLine();
 
-        //Print the user's input back to them
-        System.out.println("You wrote: " + inString);
+        //Print what the user typed
+        System.out.println("You typed: " + str);
 
-        //Close scanner to prevent resource leaks
-        inputStream.close();
+        //-------------------------NEW CODE-----------------------------//
 
+        //Have the user enter a second value
+        System.out.print("Enter another word: ");
+        
+        //Store second input in a variable
+        String str2 = scan.nextLine();
+
+        //Print it back at the user
+        System.out.println("You typed: " + str2);
+
+        System.out.println();
+
+        //Check length
+        System.out.println("Length of word 1: " + str.length());
+        System.out.println("Length of word 2: " + str2.length());
+        System.out.println();
+
+        //Check Equality
+        System.out.println("Are the strings equal");
+        System.out.println(str.equalsIgnoreCase(str2));
+
+        scan.close();
     }
 
 }
