@@ -2,7 +2,7 @@ package Day3;
 
 import java.util.Scanner;
 
-public class P1_CaseSwitch {
+public class CaseCalculator {
     
     public static void main(String[] args) {
 
@@ -38,7 +38,6 @@ public class P1_CaseSwitch {
 
         //Close scanner to prevent resource leaks
         scan.close();
-
     }
 
 }
