@@ -2,7 +2,7 @@ package Day3;
 
 import java.util.Scanner;
 
-public class CaseCalculator {
+public class P1_CaseCalculator {
     
     public static void main(String[] args) {
 
